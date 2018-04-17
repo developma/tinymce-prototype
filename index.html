@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.11/plugins/noneditable/plugin.js'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.11/skins/lightgray/skin.min.css'>
+  <script src='./tinymce-config.js'></script>
+</head>
+
+<body>
+  <textarea id="mytextarea">
+    <p>Hello, World!</p>
+    <p>Hoge<span class="mceNonEditable" style="background-color:burlywood"><b><u>[Meta]</u></b></span>Foo</p>
+    <p>こんにちは<b style="background-color:burlywood"><u data-protected>[世界]</u></b>!</p>
+  </textarea>
+  startOffset is <input type="text" readonly="true" id="startOffset"/> <br />
+  endOffset is <input type="text" readonly="true" id="endOffset"/> <br />
+  location of current node is <input type="text" readonly="true" id="location"/> <br />
+  text of current node is <input type="text" readonly="true" id="text"/> <br />
+  prev char of current cursor is <input type="text" readonly="true" id="prev"/> <br />
+  post char of current cursor is <input type="text" readonly="true" id="post"/> <br />
+
+</body>
+</html>
